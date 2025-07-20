@@ -32,6 +32,9 @@ agendador e abrir o painel interativo em seu navegador padrão:
 streamlit run hospitality_agent/app.py
 ```
 
+A interface possui um botão **Executar coleta agora** na barra lateral que
+permite forçar a atualização imediata dos dados do agente.
+
 ## Testes
 
 Rodar `pytest -q` permite validar eventuais testes adicionados ao

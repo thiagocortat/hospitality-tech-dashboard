@@ -1,10 +1,14 @@
 import pandas as pd
 import streamlit as st
-from .scheduler import LATEST_DATA, LATEST_NEWS
+from .scheduler import LATEST_DATA, LATEST_NEWS, job
 
 
 st.set_page_config(page_title="Hospitality Market Intelligence", layout="wide")
 st.title("Hospitality Market Intelligence")
+
+if st.sidebar.button("Executar coleta agora"):
+    job()
+    st.experimental_rerun()
 
 
 def load_data() -> pd.DataFrame:
