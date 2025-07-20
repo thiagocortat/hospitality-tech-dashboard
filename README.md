@@ -29,7 +29,7 @@ Após instalar as dependências, execute o comando abaixo para iniciar o
 agendador e abrir o painel interativo em seu navegador padrão:
 
 ```bash
-python -m hospitality_agent.app
+streamlit run hospitality_agent/app.py
 ```
 
 ## Testes
