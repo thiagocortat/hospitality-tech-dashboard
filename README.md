@@ -14,6 +14,25 @@ hotelaria e apresenta insights em um painel interativo.
 - Agendamento diário com a biblioteca `schedule`;
 - Painel construído com `streamlit` exibindo contagem de menções por
   empresa e tópicos por categoria.
+- Nova seção **Últimas do Mercado** mostrando feed de notícias resumidas
+  das últimas duas semanas com busca e filtros por data e empresa.
 
-Execute `python -m hospitality_agent.app` para iniciar o scheduler e o
-painel (necessário possuir as dependências do `requirements.txt`).
+## Instalação
+
+1. Clone este repositório.
+2. Crie um ambiente virtual com `python -m venv .venv` e ative-o.
+3. Instale as dependências com `pip install -r requirements.txt`.
+
+## Como executar
+
+Após instalar as dependências, execute o comando abaixo para iniciar o
+agendador e abrir o painel interativo em seu navegador padrão:
+
+```bash
+python -m hospitality_agent.app
+```
+
+## Testes
+
+Rodar `pytest -q` permite validar eventuais testes adicionados ao
+projeto.
