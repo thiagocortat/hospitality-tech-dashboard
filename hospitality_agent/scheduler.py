@@ -31,6 +31,9 @@ def job() -> None:
             unique_news.append(it)
     LATEST_NEWS = unique_news
 
+
+
+
 def start_scheduler() -> None:
     schedule.every().day.at("08:00").do(job)
     job()  # initial run
