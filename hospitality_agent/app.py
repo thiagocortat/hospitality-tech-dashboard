@@ -1,6 +1,8 @@
 from threading import Thread
+
 from hospitality_agent.scheduler import start_scheduler
 from hospitality_agent import dashboard
+
 
 
 def main() -> None:
