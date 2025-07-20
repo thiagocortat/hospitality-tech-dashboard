@@ -15,7 +15,6 @@ def job() -> None:
     for item in items:
         item["category"] = classify_content(item)
     LATEST_DATA = items
-
     news = fetch_recent_news()
     for item in news:
         item["summary"] = summarize(item["content"])
