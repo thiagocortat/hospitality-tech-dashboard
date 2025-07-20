@@ -12,7 +12,6 @@ def load_data() -> pd.DataFrame:
         return pd.DataFrame()
     return pd.DataFrame(LATEST_DATA)
 
-
 def load_news() -> pd.DataFrame:
     if not LATEST_NEWS:
         return pd.DataFrame()
